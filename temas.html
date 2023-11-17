@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="metadato" content="valor" http-equiv="cabecera-http" scheme="esquema" />
+    <meta name="author" content="Nestor">
+    <meta name="Keywords" content="">
+    <title>Sitio Web HTML</title>
+    <link rel="shortcut icon" href="iconos/icons8HTML5.png.png" title="image/x-icon">
+  
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(208, 171, 69), rgb(237, 45, 45));
+            padding: 0;
+            margin: 0;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        header{
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li{
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        li a:hover:not(.active){
+            background-color: #111;
+        }
+        .active{
+            background-color: #e26e1c;
+        }
+        h1{
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+        table{
+          border-collapse:collapse;
+          border:2px solid rgb(207, 207, 207) ;
+          letter-spacing: 1px;
+          font-size: 1.5;
+          background-color: #FFF;
+        }
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+        th{
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162,162, 162);
+        }
+        .footer{
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML</h1>
+        <nav>
+            <ul>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="temas.html">Temas</a></li>
+                <li> <a href="herramientas.html">Herramientas</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style= "margin: 15px;">Horarios de cursos</h2>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+            <col style="background-color: rgb(207, 207, 207);">
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <th></th>
+            <th>Horas</th>
+            <th>Horarios</th>
+            <tr>
+                <td>Desarrollador Back End Basico</td>
+                <td>250</td>
+                <td>8:00 am</td>
+            </tr>
+            <tr>
+                <td>Desarrolador Back End Intermedio</td>
+                <td>250</td>
+                <td>10:00am</td>
+            </tr>
+            <tr>
+                <td>Desarrollador Front End Basico</td>
+                <td>250</td>
+                <td>2:00pm</td>
+            </tr>
+            <tr>
+                <td>Deasrrollador Front End Intermedio</td>
+                <td>250</td>
+                <td>4:00</td>
+            </tr>
+            <tr>
+                <td>Desarrollador Full Stack</td>
+                <td>250</td>
+                <td>6:00</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        <p>Derechos reservados &copy;2023</p>
+    </footer>
+    
+</body>
+</html>
